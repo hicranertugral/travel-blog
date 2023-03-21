@@ -3,7 +3,7 @@ import Heading from "./components/Heading";
 function App() {
   return (
     <div>
-    <Heading />
+    <Heading bgColor={"#666"} color={"white"} />
     </div>
   );
 }
