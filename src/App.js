@@ -1,22 +1,26 @@
 import Card from "./components/Card";
 import data from "./data/db";
 import Heading from "./components/Heading";
+import { useState } from "react";
+import CardList from "./components/CardList";
 
 function App() {
-  // console.log(data)
+  const [travelData, setTravelData] = useState(data);
   return (
     <div>
       <Heading bgColor={"#666"} color={"white"} />
-
+{/* 
       {data.map((item) => (
         <Card
           key={item.id}
           id={item.id}
-          tittle={item.tittle}
+          title={item.title}
           text={item.text}
-          item={item.image}
+          image={item.image}
         />
-      ))}
+      ))} */}
+
+      <CardList travels={travelData}/>
     </div>
   );
 }
