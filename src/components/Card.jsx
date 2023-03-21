@@ -2,15 +2,15 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div>
+    <div className="card">
       <img
-        src="https://m.media-amazon.com/images/I/61fupMfonqL._AC_UF1000,1000_QL80_.jpg"
-        height="500px"
-        alt=""
+        className="card-img"
+        src="https://cdn2.vectorstock.com/i/1000x1000/64/81/vintage-pop-art-of-travel-bus-vector-14116481.jpg"
+        alt="travel-img"
       />
-      <div>
-        <h1>Heading</h1>
-        <p>
+      <div className="card-info">
+        <h1 className="card-title">Travel</h1>
+        <p className="card-desc">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
           expedita, nemo omnis ex voluptatum laudantium, incidunt officiis
           corporis odio explicabo animi dolore quia, alias eaque natus ut

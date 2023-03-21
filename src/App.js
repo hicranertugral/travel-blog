@@ -5,11 +5,9 @@ function App() {
   return (
     <div>
       <Heading bgColor={"#666"} color={"white"} />
-<Card/>
+      <Card />
     </div>
   );
 }
-
-
 
 export default App;

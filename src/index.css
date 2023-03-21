@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rubik+Iso&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+:root {
+  --primary-color: rgb(236, 236, 199);
+  --secondary-color: black;
+  --primary-accent: #36b;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Indie Flower", cursive;
+  background-image: url("https://us.123rf.com/450wm/paseven/paseven2111/paseven211100107/178010162-reticolo-senza-giunte-con-vecchi-francobolli-con-luoghi-da-diversi-paesi-sfondo-ripetuto-in-stile.jpg?ver=6");
+  font-size: 16px;
+}
+
+.card {
+  border: 1px solid black;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--primary-color);
+  gap: 20px;
+}
+
+.card-img {
+  width: 200px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px;
+}
+
+h1 {
+  font-family: "Rubik Iso", cursive;
+}
