@@ -1,15 +1,14 @@
 import React from "react";
 
-const Heading = (props) => {
- console.log(props);
+const Heading = ({bgColor, color, title}) => {
  const styling = {
-    backgroundColor : props.bgColor,
-    color : props.color,
+    backgroundColor : bgColor,
+    color : color,
     
  }
   return (
     <div>
-      <h1 style={styling}>{props.title}</h1>
+      <h1 style={styling}>{title}</h1>
     </div>
   );
 };
