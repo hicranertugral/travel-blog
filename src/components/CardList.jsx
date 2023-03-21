@@ -6,7 +6,6 @@ const CardList = ({travels}) => {
   return (
     <div>
         {travels.map(travel => <Card key={travel.id} travelData = {travel}/>)  }
-
     </div>
   )
 }

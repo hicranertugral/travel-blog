@@ -8,18 +8,7 @@ function App() {
   const [travelData, setTravelData] = useState(data);
   return (
     <div>
-      <Heading bgColor={"#666"} color={"white"} />
-{/* 
-      {data.map((item) => (
-        <Card
-          key={item.id}
-          id={item.id}
-          title={item.title}
-          text={item.text}
-          image={item.image}
-        />
-      ))} */}
-
+      <Heading  />
       <CardList travels={travelData}/>
     </div>
   );

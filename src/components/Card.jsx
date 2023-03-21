@@ -10,8 +10,7 @@ const Card = ({travelData}) => {
       />
       <div className="card-info">
         <h1 className="card-title">{travelData.title}</h1>
-        <p className="card-desc">
-          {travelData.text}
+        <p className="card-desc"> {travelData.text}
         </p>
       </div>
     </div>
