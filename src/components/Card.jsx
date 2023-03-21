@@ -16,7 +16,7 @@ const Card = () => {
           corporis odio explicabo animi dolore quia, alias eaque natus ut
           debitis aspernatur! Excepturi beatae porro fugiat quos, explicabo
           dolorem dolor adipisci quod dignissimos rem aperiam, repellat suscipit
-          iste assumenda earum, pariatur asperiores sequi?{" "}
+          iste assumenda earum, pariatur asperiores sequi?
         </p>
       </div>
     </div>
