@@ -8,19 +8,21 @@ function App() {
     { id: 4, course: "REACT" },
   ];
 
+  let showCourses = true;
   return (
-    <div className="App">
-      <h1>{company}</h1>
+    <div>
+      <h1 className="heading">{company}</h1>
       <p>{description}</p>
-      <h4>{`Courses (${courses.length})`}</h4>
-      {/* <li>{courses[0].course}</li>
-      <li>CSS</li>
-      <li>JAVASCRIPT</li>
-      <li>REACT</li> */}
-<ul>
-  {courses.map((e, i ) => <li key={e.id}>{e.course}</li>)}
-</ul>
-
+      {showCourses && (
+        <div>
+          <h4>{`Courses (${courses.length})`}</h4>
+          <ul>
+            {courses.map((e, i) => (
+              <li key={e.id}>{e.course}</li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }
