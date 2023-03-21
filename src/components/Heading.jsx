@@ -2,7 +2,7 @@ import React from "react";
 
 const Heading = () => {
   const styling = {
-    backgroundColor: "#333",
+    backgroundColor: "#555",
     color: "white",
   };
 
