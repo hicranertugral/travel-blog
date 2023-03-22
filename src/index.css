@@ -41,3 +41,10 @@ body {
 h1 {
   font-family: "Rubik Iso", cursive;
 }
+
+.travel-form{
+  background-color: rgba(0, 0, 0, 0.8);
+  color:var(--primary-color);
+  margin:30px;
+  
+}

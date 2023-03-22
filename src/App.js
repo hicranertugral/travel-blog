@@ -3,12 +3,14 @@ import data from "./data/db";
 import Heading from "./components/Heading";
 import { useState } from "react";
 import CardList from "./components/CardList";
+import Form from "./components/Form";
 
 function App() {
   const [travelData, setTravelData] = useState(data);
   return (
     <div>
       <Heading  />
+      <Form/>
       <CardList travels={travelData}/>
     </div>
   );
