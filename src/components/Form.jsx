@@ -14,7 +14,7 @@ const Form = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit} className="travel-form">
+      <form onSubmit={(e) => handleSubmit(e)} className="travel-form">
         <h2>Travel Form</h2>
         <div>
           <label htmlFor={"travel-photo"}> Travel Photo</label>
