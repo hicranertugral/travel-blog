@@ -36,15 +36,40 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0 5px;
+  width: 100%;
 }
 
 h1 {
   font-family: "Rubik Iso", cursive;
 }
 
-.travel-form{
+form{
   background-color: rgba(0, 0, 0, 0.8);
   color:var(--primary-color);
-  margin:30px;
-  
+  /* margin:30px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:30px;
+  gap:15px;
+}
+
+.fi{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea{
+  resize: none;
+}
+
+.card-list{
+  max-width: 1600px;
+  margin: 50px auto;
+  display: flex;
+  gap:30px;
+  justify-content: center;
+  flex-wrap: wrap;
 }

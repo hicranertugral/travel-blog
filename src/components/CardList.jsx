@@ -1,13 +1,14 @@
-import React from 'react'
-import Card from './Card'
+import React from "react";
+import Card from "./Card";
 
-
-const CardList = ({travels}) => {
+const CardList = ({ travels }) => {
   return (
     <div>
-        {travels.map(travel => <Card key={travel.id} travelData = {travel}/>)  }
+      {travels.map((travel) => (
+        <Card key={travel.id} travelData={travel} />
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default CardList
+export default CardList;

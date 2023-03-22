@@ -1,23 +1,26 @@
 import React, { useState } from "react";
 
-const Form = () => {
+const Form = ({ propHandler }) => {
   const [photo, setPhoto] = useState("");
   const [location, setlocation] = useState("");
   const [notes, setNotes] = useState("");
 
   const handleSubmit = (submitEvent) => {
     submitEvent.preventDefault();
-    console.log(photo);
-    console.log(location);
-    console.log(notes);
+    propHandler({
+      id: Math.floor(Math.random() * 10000) + 1,
+      Image: photo,
+      title: location,
+      text: notes,
+    });
   };
 
   return (
     <div>
-      <form onSubmit={(e) => handleSubmit(e)} className="travel-form">
+      <form onSubmit={(e) => handleSubmit(e)}>
         <h2>Travel Form</h2>
-        <div>
-          <label htmlFor={"travel-photo"}> Travel Photo</label>
+        <div className="fi">
+          <label htmlFor={"travel-photo"}>Travel Photo URL</label>
           <input
             onChange={(e) => setPhoto(e.target.value)}
             type="text"
@@ -25,8 +28,8 @@ const Form = () => {
           />
         </div>
 
-        <div>
-          <label htmlFor={"travel-location"}> Travel Country</label>
+        <div className="fi">
+          <label htmlFor={"travel-location"}>Travel Country</label>
           <input
             onChange={(e) => setlocation(e.target.value)}
             type="text"
@@ -34,12 +37,13 @@ const Form = () => {
           />
         </div>
 
-        <div>
-          <label htmlFor={"travel-notes"}> Travel Notes</label>
+        <div className="fi">
+          <label htmlFor={"travel-notes"}>Travel Notes</label>
           <textarea
             onChange={(e) => setNotes(e.target.value)}
             cols="30"
             rows="10"
+            maxLength={250}
             id={"travel-notes"}
           />
         </div>
